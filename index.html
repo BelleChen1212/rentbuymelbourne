@@ -83,9 +83,30 @@
       .tab{flex:1 1 auto; text-align:center}
     }
   </style>
-  <meta name="699b934cbf2da16568083f271d97984cac732de8" content="699b934cbf2da16568083f271d97984cac732de8" />
+  <style>
+  #leftAd {
+    position: fixed;
+    top: 100px;     /* distance from the top */
+    left: 10px;     /* distance from the left edge */
+    width: 160px;
+    height: 300px;
+    z-index: 1000;  /* make sure it stays on top */
+  }
+</style>
 </head>
 <body>
+	<div id="leftAd">
+  <script type="text/javascript">
+    atOptions = {
+      'key' : 'b9a8ee1ba3420ea09389b8b49af05326',
+      'format' : 'iframe',
+      'height' : 300,
+      'width' : 160,
+      'params' : {}
+    };
+  </script>
+  <script type="text/javascript" src="//www.highperformanceformat.com/b9a8ee1ba3420ea09389b8b49af05326/invoke.js"></script>
+</div>
   <div class="shell">
     <div class="top">
       <div class="brand">Simple Property Tools</div>
@@ -137,18 +158,6 @@
 
     <footer>© <span id="y"></span> Simple Property Tools</footer>
   </div>
-
-  <script type="text/javascript">
-	atOptions = {
-		'key' : 'b9a8ee1ba3420ea09389b8b49af05326',
-		'format' : 'iframe',
-		'height' : 300,
-		'width' : 160,
-		'params' : {}
-	};
-</script>
-<script type="text/javascript" src="//www.highperformanceformat.com/b9a8ee1ba3420ea09389b8b49af05326/invoke.js"></script>
-  
   <script>
     // Simple tab switcher
     const tabs = document.querySelectorAll('[role="tab"]');
@@ -170,6 +179,7 @@
   </script>
 </body>
 </html>
+
 
 
 
