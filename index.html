@@ -83,30 +83,37 @@
       .tab{flex:1 1 auto; text-align:center}
     }
   </style>
-	<style>
-#adSidebar {
+
+<style>
+#leftAd {
   position: fixed;
   top: 100px;
-  right: 10px;
-  width: 300px;
+  left: 10px;
+  width: 240px;
+  height: 800px;
   z-index: 1000;
 }
+@media (max-width: 768px) {
+  #leftAd {
+    display: none;
+  }
+}
 </style>
+	
 </head>
 <body>
 	
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2050361550970179"
-     crossorigin="anonymous"></script>
-<!-- ad1 -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-2050361550970179"
-     data-ad-slot="8042395751"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
+<div id="leftAd">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2050361550970179"
+    crossorigin="anonymous"></script>
+  <ins class="adsbygoogle"
+       style="display:inline-block;width:240px;height:800px"
+       data-ad-client="ca-pub-2050361550970179"
+       data-ad-slot="4193175306"></ins>
+  <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
+</div>
 	
   <div class="shell">
     <div class="top">
@@ -180,6 +187,7 @@
   </script>
 </body>
 </html>
+
 
 
 
